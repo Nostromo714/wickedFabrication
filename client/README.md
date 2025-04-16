@@ -1,3 +1,11 @@
+
+
+🚫 This project is proprietary and was developed for Wicked Fabrication LLC. Not for public reuse or redistribution.
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
