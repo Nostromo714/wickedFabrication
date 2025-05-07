@@ -1,8 +1,6 @@
-import React from 'react';
-import './index.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import './index.css'; // or './App.css' depending on your file
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+//import './index.css';
 
 import HomePage from './pages/home';
 
