@@ -1,5 +1,6 @@
 // Header component
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -7,11 +8,11 @@ const Header = () => {
             <h1 className="text-lg font-bold">Wicked Fabrication</h1>
             <nav>
                 <ul className="flex space-x-4">
-                    <li><a href="#" className="hover:underline">Home</a></li>
-                    <li><a href="#" className="hover:underline">About</a></li>
-                    <li><a href="#" className="hover:underline">Services</a></li>
-                    <li><a href="#" className="hover:underline">Portfolio</a></li>
-                    <li><a href="#" className="hover:underline">Contact</a></li>
+                    <li><Link to="/" className="hover:underline">Home</Link></li>
+                    <li><Link to="/about" className="hover:underline">About</Link></li>
+                    <li><Link to="/services" className="hover:underline">Services</Link></li>
+                    <li><Link to="/portfolio" className="hover:underline">Portfolio</Link></li>
+                    <li><Link to="/contact" className="hover:underline">Contact</Link></li>
                 </ul>
             </nav>
         </div>
