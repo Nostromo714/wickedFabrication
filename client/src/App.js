@@ -1,13 +1,24 @@
-import React from 'react';
-import './index.css';
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+//import './index.css';
+
+import HomePage from './pages/home';
+
+// import '.pages/about.js';
+// import './pages/services.js';
+// import './pages/portfolio.js';
+// import './pages/contact.js';
+// import './pages/faq.js';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Wicked Fabrication LLC </h1>
-     <p>Custom signs, design, and fabrication — made with passion.</p>
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        </Routes>
+    </Router>
+  )
 }
 
 export default App;
+
