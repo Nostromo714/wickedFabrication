@@ -7,7 +7,7 @@ import HomePage from './pages/home';
 // import '.pages/about.js';
 // import './pages/services.js';
 // import './pages/portfolio.js';
-// import './pages/contact.js';
+// import './pages/info.js';
 // import './pages/faq.js';
 
 function App() {
