@@ -4,6 +4,21 @@ import { Link } from 'react-router-dom';
 import HamburgerMenu from './hamburgerMenu';
 import { useMenu } from '../context/menuContext';
 
+const dropdownItems = {
+  services: [
+    { to: "/services/service1", label: "Service 1" },
+    { to: "/services/service2", label: "Service 2" },
+  ],
+  portfolio: [
+    { to: "/portfolio/signs", label: "SIGNS" },
+    { to: "/portfolio/art", label: "ART" },
+  ],
+  info: [
+    { to: "/info/form", label: "INFO" },
+    { to: "/faq/form", label: "F.A.Q" },
+  ],
+};
+
 const Header = () => {
   const { menuOpen, setMenuOpen, openDropdown, setOpenDropdown } = useMenu();
 
@@ -33,10 +48,16 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between p-4 text-white relative z-50">
+    <header className="flex items-center justify-between p-4 text-white relative z-50">
       <h1 className="text-lg font-bold">Wicked Fabrication</h1>
 
-      <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden">
+      {/* Mobile Hamburger Button */}
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="md:hidden"
+        aria-label="Toggle menu"
+        aria-expanded={menuOpen}
+      >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
@@ -53,41 +74,47 @@ const Header = () => {
           <li><Link to="/about" className="hover:underline">ABOUT</Link></li>
 
           {/* Dropdowns */}
-          {['services', 'portfolio', 'info'].map((item) => (
-            <li key={item} className="relative" ref={dropdownRefs[item]}>
-              <button onClick={() => toggleDropdown(item)} className="hover:underline">
-                {item.toUpperCase()} ▾
+          {Object.keys(dropdownItems).map((menuKey) => (
+            <li key={menuKey} className="relative">
+              <button
+                onClick={() => toggleDropdown(menuKey)}
+                className="hover:underline"
+                aria-haspopup="true"
+                aria-expanded={openDropdown === menuKey}
+                aria-controls={`${menuKey}-menu`}
+              >
+                {menuKey.toUpperCase()} ▾
               </button>
-              {openDropdown === item && (
-                <ul className="absolute left-0 mt-2 bg-white text-black shadow-lg rounded-md">
-                  {item === 'services' && (
-                    <>
-                      <li><Link to="/services/service1" className="block px-4 py-2 hover:bg-gray-200">Service 1</Link></li>
-                      <li><Link to="/services/service2" className="block px-4 py-2 hover:bg-gray-200">Service 2</Link></li>
-                    </>
-                  )}
-                  {item === 'portfolio' && (
-                    <>
-                      <li><Link to="/portfolio/signs" className="block px-4 py-2 hover:bg-gray-200">SIGNS</Link></li>
-                      <li><Link to="/portfolio/art" className="block px-4 py-2 hover:bg-gray-200">ART</Link></li>
-                    </>
-                  )}
-                  {item === 'info' && (
-                    <>
-                      <li><Link to="/info/form" className="block px-4 py-2 hover:bg-gray-200">INFO</Link></li>
-                      <li><Link to="/faq/form" className="block px-4 py-2 hover:bg-gray-200">F.A.Q</Link></li>
-                    </>
-                  )}
-                </ul>
-              )}
+
+              <div ref={dropdownRefs[menuKey]}>
+                {openDropdown === menuKey && (
+                  <ul
+                    id={`${menuKey}-menu`}
+                    className="absolute left-0 mt-2 bg-white text-black shadow-lg rounded-md"
+                    role="menu"
+                  >
+                    {dropdownItems[menuKey].map(({ to, label }) => (
+                      <li key={to} role="none">
+                        <Link
+                          to={to}
+                          role="menuitem"
+                          className="block px-4 py-2 hover:bg-gray-200"
+                        >
+                          {label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
             </li>
           ))}
         </ul>
       </nav>
 
-      {/* Mobile Hamburger Menu */}
+      {/* Mobile Hamburger Menu Content */}
       <HamburgerMenu />
-    </div>
+    </header>
   );
 };
 
