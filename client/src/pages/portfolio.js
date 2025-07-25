@@ -18,7 +18,7 @@ const Portfolio = () => {
   {/* Background image */}
   <div
     className="h-[200px] bg-cover bg-center"
-    style={{
+    style={{ backgroundImage: `url(${backgroundImage})`
     }}
   />
 
