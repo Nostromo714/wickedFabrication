@@ -10,30 +10,27 @@ import backgroundImage from '../Images/havasuBridge.jpg';
 const Portfolio = () => {
   return (
     <div>
-      
-            {/* Background section with header and overlay */}
-            <section>
-                
-        <div className="relative">
-  {/* Background image */}
-  <div
-    className="h-[200px] bg-cover bg-center"
-    style={{ backgroundImage: `url(${backgroundImage})`
-    }}
-  />
+      {/* Background section with header and overlay */}
+      <section>
+      <div className="relative">
 
-  {/* Header over background */}
-  <div className="absolute top-0 left-0 w-full">
-    <Header />
-  </div>
-</div>
+      {/* Background image */}
+      <div className="h-[200px] bg-cover bg-center"
+      style={{ backgroundImage: `url(${backgroundImage})`
+      }}
+      />
 
-               
-                {/* Gallery */}
-                    <div className='bg-black text-white p-6'>
-                      <PortfolioGallery />
-                    </div>
-            </section>
+      {/* Header over background */}
+      <div className="absolute top-0 left-0 w-full">
+      <Header />
+      </div>
+      </div>
+
+      {/* Gallery */}
+      <div className='bg-black text-white p-6'>
+      <PortfolioGallery />
+      </div>
+      </section>
 
     </div>
   );
