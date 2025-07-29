@@ -3,7 +3,7 @@ import Header from '../components/header.js';
 
 import backgroundImage from '../Images/havasuBridge.jpg';
 //import wickedLogo from '../Images/wickedFabLogo.jpg'
-import transparentLogo from '../Images/WickedLogoTransparent.png';
+import transparentLogo from '../Images/wickedLogoTransparent.png';
 
 const HomePage = () => {
 
