@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import HamburgerMenu from './hamburgerMenu';
 import { useMenu } from '../context/menuContext';
+import transparentLogo from '../Images/wickedLogoTransparent.png';
 
 const dropdownItems = {
   services: [
@@ -49,8 +50,11 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between p-4 text-white relative z-50">
-      <h1 className="text-lg font-bold">Wicked Fabrication</h1>
-
+     
+      {/* Logo */}  
+      <section className="flex items-center">
+    <img src={transparentLogo} alt="Wicked Logo" className="w-48 h-48 object-cover" />
+      </section>
       {/* Mobile Hamburger Button */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
