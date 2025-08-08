@@ -72,8 +72,10 @@ const Header = () => {
       </button>
 
       {/* Desktop Menu */}
-      <nav className="hidden md:block" aria-label="Main navigation">
-        <ul className="flex space-x-4">
+      <nav className="hidden md:block sticky top-0 bg-opacity-60 z-20 bg-gray-900 right-10 p-2 shadow-sm rounded-md" 
+      aria-label="Main navigation"
+      >
+        <ul className="flex space-x-4 p-2 rounded-md">
           <li><Link to="/" className="hover:underline">HOME</Link></li>
           <li><Link to="/about" className="hover:underline">ABOUT</Link></li>
 
@@ -95,7 +97,7 @@ const Header = () => {
                   <ul
                     id={`${menuKey}-menu`}
                     className={`absolute left-0 mt-2 bg-white text-black shadow-lg rounded-md z-50 ${
-    menuKey === "info" ? "right-0" : "left-0"}`}
+                    menuKey === "info" ? "right-0" : "left-0"}`}
                     role="menu"
                   >
                     {dropdownItems[menuKey].map(({ to, label }) => (
