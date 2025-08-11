@@ -1,5 +1,6 @@
 import React, {useEffect, useState, useRef} from 'react';
 import Header from '../components/header.js';
+import HeroQuotes from '../components/heroQuotes.js';
 
 import backgroundImage from '../Images/havasuBridge.jpg';
 //import wickedLogo from '../Images/wickedFabLogo.jpg'
@@ -19,13 +20,13 @@ const HomePage = () => {
                 <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
                 {/* Header on top of background */}
-                <section>
+                <header>
                     <Header />
-                </section>
+                </header>
 
                 {/* Optional content centered over background */}
-                <div className="relative z-10 flex flex-col items-center justify-center h-full text-white">
-                    <p className="text-lg mt-4">This is some content over the background.</p>
+                <div className='pt-20'>
+                    <HeroQuotes />
                 </div>
             </section>
 
