@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../index.css';
+import weldingImage from '../Images/sparks.jpg';
 
 const quotes = [
   {
@@ -31,7 +32,10 @@ const HeroQuotes = () => {
   }, []);
 
   return (
-    <div className="relative h-48 flex flex-col items-center justify-center text-white transition-all duration-1000 ease-in-out">
+    
+    <div className="relative h-96 flex flex-col items-center justify-center text-white transition-all duration-2000 ease-in-out"
+    style={{ backgroundImage: `url(${weldingImage})` }}
+    >
       {quotes.map((quote, i) => (
         <div
           key={i}
