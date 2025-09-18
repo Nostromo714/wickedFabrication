@@ -1,4 +1,3 @@
-import React from "react";
 import "../index.css";
 import transparentLogo from "../Images/wickedLogoTransparent.png";
 
@@ -74,8 +73,6 @@ const WhatWeDo = () => {
           voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
             </p>
           </div>
-
-     
       </div>
        </section>
        </div>
