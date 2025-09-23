@@ -2,6 +2,7 @@ import React, {useEffect, useState, useRef} from 'react';
 import Header from '../components/header.js';
 import HeroQuotes from '../components/heroQuotes.js';
 import WhatWeDo from '../components/whatWeDo.js';
+import ContactForm from '../components/contactForm.js';
 
 import backgroundImage from '../Images/havasuBridge.jpg';
 //import wickedLogo from '../Images/wickedFabLogo.jpg'
@@ -34,6 +35,11 @@ const HomePage = () => {
             {/* What We Do Content/component */}
             <div className="">
                 <WhatWeDo />
+                </div>
+            
+            {/* Contact Form Component */}
+            <div className="bg-gray-800">
+                <ContactForm /> 
                 </div>
         </div>
     );
