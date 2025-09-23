@@ -1,4 +1,4 @@
-import "../index.css";
+// WhatWeDo.js component - describes the services offered by Wicked Fabrication
 import transparentLogo from "../Images/wickedLogoTransparent.png";
 
 const WhatWeDo = () => {
