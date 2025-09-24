@@ -3,6 +3,7 @@ import Header from '../components/header.js';
 import HeroQuotes from '../components/heroQuotes.js';
 import WhatWeDo from '../components/whatWeDo.js';
 import ContactForm from '../components/contactForm.js';
+import Footer from '../components/footer.js';
 
 import backgroundImage from '../Images/havasuBridge.jpg';
 //import wickedLogo from '../Images/wickedFabLogo.jpg'
@@ -41,6 +42,11 @@ const HomePage = () => {
             <div className="bg-gray-800">
                 <ContactForm /> 
                 </div>
+
+            {/* Footer Component */}
+            <footer className="mt-auto">
+                <Footer />
+            </footer>
         </div>
     );
 };

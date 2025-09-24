@@ -1,6 +1,7 @@
 // src/App.js
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { MenuProvider } from './context/menuContext.js'; 
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 import HomePage from './pages/home';
 import AboutPage from './pages/about.js';
