@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from '../components/header.js';
 import PortfolioGallery from '../components/portfolioGallery.js';
+import Footer from '../components/footer.js';
 
 import wickedLogo from '../Images/wickedFabLogo.jpg'
 import backgroundImage from '../Images/havasuBridge.jpg';
@@ -30,6 +31,7 @@ const Portfolio = () => {
       <div className='bg-black text-white p-6'>
       <PortfolioGallery />
       </div>
+      <Footer />
       </section>
 
     </div>
