@@ -1,5 +1,7 @@
 // WhatWeDo.js component - describes the services offered by Wicked Fabrication
 import transparentLogo from "../Images/wickedLogoTransparent.png";
+import welderOne from "../Images/welder1.jpg"
+import modeling from "../Images/modeling.jpg"
 
 const WhatWeDo = () => {
   return (
@@ -35,11 +37,11 @@ const WhatWeDo = () => {
           {/* Fabrication */}
           <div className="bg-gray-900 rounded-lg shadow-lg p-4">
             <img
-              src={transparentLogo}
+              src={modeling}
               alt="Fabrication"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Fabrication</h3>
+            <h3 className="text-xl font-semibold mb-2">Design</h3>
             <p className="text-sm text-gray-300">
               Custom metalwork that transforms your ideas into reality. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
           voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
@@ -49,11 +51,11 @@ const WhatWeDo = () => {
           {/* Welding */}
           <div className="bg-gray-900 rounded-lg shadow-lg p-4">
             <img
-              src={transparentLogo}
+              src={welderOne}
               alt="Welding"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Welding</h3>
+            <h3 className="text-xl font-semibold mb-2">Welding and Fabrication</h3>
             <p className="text-sm text-gray-300">
               Precision welding solutions with clean, strong finishes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
           voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
@@ -63,11 +65,11 @@ const WhatWeDo = () => {
           {/* Design */}
           <div className="bg-gray-900 rounded-lg shadow-lg p-4">
             <img
-              src={transparentLogo}
+              src={modeling}
               alt="Design"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Design</h3>
+            <h3 className="text-xl font-semibold mb-2">Signs and Art</h3>
             <p className="text-sm text-gray-300">
               Bespoke designs tailored to meet your vision and goals. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
           voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
