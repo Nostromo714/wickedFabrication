@@ -27,6 +27,5 @@ const FaqCard = ({ question , answer }) => { const [open, setOpen] = useState(fa
     </div>
   );
 };
-
 export default FaqCard;    
     
