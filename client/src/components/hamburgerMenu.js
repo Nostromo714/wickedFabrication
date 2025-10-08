@@ -39,13 +39,21 @@ const HamburgerMenu = () => {
             {openDropdown === 'services' && (
               <ul className="ml-4 mt-2 space-y-2">
                 <li>
-                  <Link to="/services/service1" onClick={() => setMenuOpen(false)}>
-                    Service 1
+                  <Link to="/services#signs" onClick={() => setMenuOpen(false)}
+                  className="block px-2 py-2 hover:bg-gray-200 rounded">
+                    Signs
                   </Link>
                 </li>
                 <li>
-                  <Link to="/services/service2" onClick={() => setMenuOpen(false)}>
-                    Service 2
+                  <Link to="/services#design" onClick={() => setMenuOpen(false)}
+                  className="block px-2 py-2 hover:bg-gray-200 rounded">
+                    Design and Art
+                  </Link>
+                </li>
+                 <li>
+                  <Link to="/services#metalFab" onClick={() => setMenuOpen(false)}
+                  className="block px-2 py-2 hover:bg-gray-200 rounded">
+                    Metal Fabrications
                   </Link>
                 </li>
               </ul>

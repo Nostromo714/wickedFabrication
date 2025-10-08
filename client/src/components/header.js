@@ -7,16 +7,16 @@ import transparentLogo from '../Images/wickedLogoTransparent.png';
 
 const dropdownItems = {
   services: [
-    { to: "/services#design", label: "Design" },
-    { to: "/services#fabrication", label: "Welding and fabrication" },
-    { to: "/services#signs", label: "Signs and Art" },
+    { to: "/services#signs", label: "Signs" },
+    { to: "/services#design", label: "Design and Art" },
+    { to: "/services#metalFab", label: "Metal Fabrication" },
   ],
   portfolio: [
     { to: "/portfolio/signs", label: "SIGNS" },
     { to: "/portfolio/art", label: "ART" },
   ],
   info: [
-    { to: "/info/form", label: "INFO" },
+    { to: "/info/form", label: "Contact Us" },
     { to: "/faq/form", label: "F.A.Q" },
   ],
 };
