@@ -2,6 +2,7 @@
 import transparentLogo from "../Images/wickedLogoTransparent.png";
 import modelingImage from "../Images/modeling.jpg";
 import weldingImage from "../Images/welder1.jpg";
+
 const WhatWeDo = () => {
   return (
     <div>
@@ -64,7 +65,7 @@ const WhatWeDo = () => {
           {/* Design */}
           <div className="bg-gray-900 rounded-lg shadow-lg p-4">
             <img
-              src={transparentLogo}
+              src={modeling}
               alt="Design"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
