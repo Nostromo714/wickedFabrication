@@ -13,9 +13,9 @@ const Footer = () => {
           <div>
             <h5 className="text-lg font-semibold flex justify-center ">Services</h5>
             <ul className="space-y-2 mt-2 ">
-              <li><a href="/service1" className="text-gray-400 hover:text-white flex justify-center ">Fabrication</a></li>
-              <li><a href="/service2" className="text-gray-400 hover:text-white flex justify-center ">Welding</a></li>
-              <li><a href="/service3" className="text-gray-400 hover:text-white flex justify-center ">Design</a></li>
+              <li><a href="/services#signs" className="text-gray-400 hover:text-white flex justify-center ">Signs</a></li>
+              <li><a href="/services#design" className="text-gray-400 hover:text-white flex justify-center ">Design and Art</a></li>
+              <li><a href="/services#metalFab" className="text-gray-400 hover:text-white flex justify-center">Metal Fabrication</a></li>
             </ul>
           </div>
 

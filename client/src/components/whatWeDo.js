@@ -1,7 +1,7 @@
 // WhatWeDo.js component - describes the services offered by Wicked Fabrication
 import transparentLogo from "../Images/wickedLogoTransparent.png";
-import welderOne from "../Images/welder1.jpg"
-import modeling from "../Images/modeling.jpg"
+import modelingImage from "../Images/modeling.jpg";
+import weldingImage from "../Images/welder1.jpg";
 
 const WhatWeDo = () => {
   return (
@@ -37,7 +37,7 @@ const WhatWeDo = () => {
           {/* Fabrication */}
           <div className="bg-gray-900 rounded-lg shadow-lg p-4">
             <img
-              src={modeling}
+              src={modelingImage}
               alt="Fabrication"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
@@ -51,7 +51,7 @@ const WhatWeDo = () => {
           {/* Welding */}
           <div className="bg-gray-900 rounded-lg shadow-lg p-4">
             <img
-              src={welderOne}
+              src={weldingImage}
               alt="Welding"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
@@ -69,7 +69,7 @@ const WhatWeDo = () => {
               alt="Design"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
-            <h3 className="text-xl font-semibold mb-2">Signs and Art</h3>
+            <h3 className="text-xl font-semibold mb-2">Industral Signs and Art</h3>
             <p className="text-sm text-gray-300">
               Bespoke designs tailored to meet your vision and goals. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
           voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
