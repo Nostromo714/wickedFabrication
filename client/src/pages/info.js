@@ -26,7 +26,7 @@ const Info = () => {
         {/* Address */}
         <div className="flex-1 p-4 border flex flex-col items-center bg-gray-800">
           <h1 className="text-2xl font-bold">Address</h1>
-          <p className="mt-2 pt-10">Lake Havsu, Arizona</p>
+          <p className="mt-2 p-10">Lake Havsu, Arizona</p>
         </div>
         
       </section>
