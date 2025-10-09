@@ -22,6 +22,11 @@ const HomePage = () => {
                 {/* Dark overlay to dim background image */}
                 <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
+                {/* Transparent logo */}
+                <section className="p-4 relative z-10">
+                    <img src={transparentLogo} alt="Wicked Logo" className="w-48 h-48" />
+                </section>
+
                 {/* Header on top of background */}
                 <header className='pb-2'>
                     <Header />
