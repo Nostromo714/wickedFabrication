@@ -49,7 +49,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="bg-gray-800 text-white p-6 border-t-4">
+    <section className="bg-gray-900 text-white p-6 border-t-4">
       <div className="max-w-4xl mx-auto text-center">
         <h1 className="text-3xl md:text-4xl font-bold mb-6 border-b-2 pb-4">
           Let's Make Your Project Happen!
@@ -68,7 +68,7 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="p-3 w-full bg-red-800 text-white rounded-md"
+            className="p-3 w-full bg-gray-700 text-white rounded-md"
             placeholder="Name:"
           />
 
@@ -80,7 +80,7 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="p-3 w-full bg-red-800 text-white rounded-md"
+            className="p-3 w-full bg-gray-700 text-white rounded-md"
             placeholder="Email:"
           />
 
@@ -91,7 +91,7 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="p-3 w-full bg-red-800 text-white rounded-md"
+            className="p-3 w-full bg-gray-700 text-white rounded-md"
             placeholder="Message:"
             rows={5}
           ></textarea>
@@ -99,7 +99,7 @@ const ContactForm = () => {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full px-4 py-2 bg-green-800 text-white font-semibold rounded-md hover:bg-green-700 transition-colors"
+            className="w-full px-4 py-2 bg-gray-800 text-white font-semibold rounded-md hover:bg-green-700 transition-colors"
           >
             Send Message
           </button>
