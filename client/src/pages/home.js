@@ -14,6 +14,11 @@ const HomePage = () => {
     return (
         <div className="flex flex-col min-h-screen">
 
+            {/* Header on top of background outside of scroll-limited section*/}
+                <header className="fixed top-10 right-0 z-50  ">
+                    <Header />
+                </header>
+
             {/* Background section with header and overlay */}
             <section
                 className="relative bg-cover bg-center h-screen"
@@ -26,11 +31,6 @@ const HomePage = () => {
                 <section className="p-4 relative z-10">
                     <img src={transparentLogo} alt="Wicked Logo" className="w-48 h-48" />
                 </section>
-
-                {/* Header on top of background */}
-                <header className='pb-2'>
-                    <Header />
-                </header>
 
                 {/* Hero Quotes with box styling and text styling */}
                 <div className=" border-b-4 border-l-4 border-t-4 border-r-4 rounded-lg w-10/12 max-w-4xl mx-auto bg-black bg-opacity-50 text-center p-2 relative z-10">
