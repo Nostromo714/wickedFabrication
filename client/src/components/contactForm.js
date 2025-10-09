@@ -49,8 +49,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="bg-gray-900 text-white p-6 border-t-4">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="bg-gray-900 text-white p-6 border-t-4 ">
+      <div className="max-w-4xl mx-auto text-center p-12">
         <h1 className="text-3xl md:text-4xl font-bold mb-6 border-b-2 pb-4">
           Let's Make Your Project Happen!
         </h1>
@@ -68,7 +68,8 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="p-3 w-full bg-gray-700 text-white rounded-md"
+            className="w-full bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-green-500 text-white placeholder-gray-400 py-2"
+
             placeholder="Name:"
           />
 
@@ -80,7 +81,8 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="p-3 w-full bg-gray-700 text-white rounded-md"
+           className="w-full bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-green-500 text-white placeholder-gray-400 py-2"
+
             placeholder="Email:"
           />
 
@@ -91,9 +93,10 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="p-3 w-full bg-gray-700 text-white rounded-md"
+           className="w-full bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-green-500 text-white placeholder-gray-400 py-2"
+
             placeholder="Message:"
-            rows={5}
+            rows={2}
           ></textarea>
 
           {/* Submit Button */}
