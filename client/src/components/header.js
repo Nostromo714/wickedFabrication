@@ -70,7 +70,7 @@ const Header = () => {
       </button>
 
       {/* Desktop Menu */}
-      <nav className="hidden md:block sticky top-0 bg-opacity-70 z-20 bg-gray-900 right-10 p-2 shadow-sm rounded-md" 
+      <nav className="hidden md:block sticky top-0 bg-opacity-70 z-20 bg-gray-900 p-2 shadow-sm rounded-md" 
       aria-label="Main navigation"
       >
         <ul className="flex space-x-4 p-2 rounded-md border-green-500 border-2">
