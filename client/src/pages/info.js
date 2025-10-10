@@ -5,8 +5,8 @@ import React from 'react';
 
 const Info = () => {
   return (
-    <div className="p-4 bg-gray-800 text-white min-h-screen md:flex-row">
-      <section className="mb-8">
+    <div className="p-4 bg-gray-800 text-white min-h-screen md:flex-row pt-20">
+      <section className="mb-8 fixed top-10 right-10">
         <Header />
       </section>
 
