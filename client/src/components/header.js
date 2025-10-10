@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import HamburgerMenu from './hamburgerMenu';
 import { useMenu } from '../context/menuContext';
 
+
 const dropdownItems = {
   services: [
     { to: "/services#signs", label: "Signs" },
@@ -50,6 +51,7 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between p-4 text-white relative z-50">
+     
 
       {/* Mobile Hamburger Button */}
       <button
@@ -68,10 +70,10 @@ const Header = () => {
       </button>
 
       {/* Desktop Menu */}
-      <nav className="hidden md:block sticky top-0 bg-opacity-60 z-20 bg-gray-900 right-10 p-2 shadow-sm rounded-md" 
+      <nav className="hidden md:block sticky top-0 bg-opacity-70 z-20 bg-gray-900 right-10 p-2 shadow-sm rounded-md" 
       aria-label="Main navigation"
       >
-        <ul className="flex space-x-4 p-2 rounded-md">
+        <ul className="flex space-x-4 p-2 rounded-md border-green-500 border-2">
           <li><Link to="/" className="hover:underline">HOME</Link></li>
           <li><Link to="/about" className="hover:underline">ABOUT</Link></li>
 

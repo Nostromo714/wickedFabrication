@@ -15,7 +15,7 @@ const HomePage = () => {
         <div className="flex flex-col min-h-screen">
 
             {/* Header on top of background outside of scroll-limited section*/}
-                <header className="fixed top-10 right-0 z-50  ">
+                <header className="fixed top-10 right-10 z-50 ">
                     <Header />
                 </header>
 
