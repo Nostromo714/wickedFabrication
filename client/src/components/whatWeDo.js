@@ -5,7 +5,7 @@ import weldingImage from "../Images/welder1.jpg";
 const WhatWeDo = () => {
   return (
     <div>
-    <section className="bg-gray-800 text-white p-6 border-t-4">
+    <section className="bg-gray-800 text-white p-6 border-t-4 pt-20">
       <div className="max-w-4xl mx-auto text-center">
         <img
           src={transparentLogo}
@@ -19,7 +19,7 @@ const WhatWeDo = () => {
           Explore our custom fabrication services and see how we can bring your
           vision to life.
         </p>
-        <p>
+        <p className="pb-20">
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
           voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
           Nesciunt, ullam. Adipisci modi veritatis beatae culpa ipsam
@@ -31,8 +31,8 @@ const WhatWeDo = () => {
       </div>
     </section>
      {/* Three Column Grid Section */}
-    <section className="bg-gray-800 text-white p-6 border-t-4 ">
-      <div className="grid md:grid-cols-3 gap-8">
+    <section className="bg-gray-800 text-white p-6 border-t-4 pt-20">
+      <div className="grid md:grid-cols-3 gap-8 pb-20">
           {/* Fabrication */}
           <div className="bg-gray-900 rounded-lg shadow-lg p-4">
             <img
