@@ -17,7 +17,7 @@ const HamburgerMenu = () => {
       <nav
         className={`fixed top-0 right-0 h-full w-1/3 max-w-sm bg-white text-black z-40 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
-        } md:hidden`}
+        } lg:hidden`}
       >
         <ul className="flex flex-col space-y-4 p-6">
           <li>

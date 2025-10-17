@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import HamburgerMenu from './hamburgerMenu';
 import { useMenu } from '../context/menuContext';
+import transparentLogo from "../Images/wickedLogoTransparent.png";
 
 
 const dropdownItems = {
@@ -51,12 +52,11 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between p-4 text-white relative z-50">
-     
-
+      
       {/* Mobile Hamburger Button */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="md:hidden"
+        className="lg:hidden"
         aria-label="Toggle menu"
         aria-expanded={menuOpen}
       >
@@ -70,7 +70,7 @@ const Header = () => {
       </button>
 
       {/* Desktop Menu with green border*/}
-      <nav className="hidden md:block sticky top-0 bg-opacity-70 z-20 bg-gray-900 p-2 shadow-sm rounded-md" 
+      <nav className="hidden lg:block sticky top-0 bg-opacity-70 z-20 bg-gray-900 p-2 shadow-sm rounded-md" 
       aria-label="Main navigation"
       >
         <ul className="flex space-x-4 p-2 rounded-md border-green-500 border-2">
