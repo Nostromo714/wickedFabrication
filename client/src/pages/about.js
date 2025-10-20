@@ -11,9 +11,18 @@ const AboutPage = () => {
     <section className="bg-black text-white p-8">
 
         {/* Transparent logo */}
-        <section className="p-4 relative z-10">
-          <img src={transparentLogo} alt="Wicked Logo" className="w-48 h-48" />
-        </section>
+                <section className="p-2 relative z-10 flex flex-row text-center pt-4">
+                  <img src={transparentLogo} alt="Wicked Logo" className="w-48 h-48" />
+        
+                  <div className="flex flex-col text-left pl-4">
+                    <h1 className="text-white text-2xl sm:text-3xl font-bold drop-shadow-lg pt-10">
+                      Wicked Fabrication
+                    </h1>
+                    <p className="text-white text-sm sm:text-base italic drop-shadow-lg">
+                      Custom Metal Fabrication & Signage
+                    </p>
+                  </div>
+                </section>
 
         </section>
         {/* Header component */}
