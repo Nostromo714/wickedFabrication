@@ -37,7 +37,7 @@ const HeroQuotes = () => {
       {quotes.map((quote, i) => (
         <div
           key={i}
-          className={`absolute text-center max-w-xl px-4 transition-opacity duration-[1500ms] ${
+          className={`absolute text-center max-w-xl px-4 transition-opacity duration-[1500ms] animated-gradient-text ${
             i === index ? 'opacity-100' : 'opacity-0'
           }`}
         >

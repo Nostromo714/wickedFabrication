@@ -39,7 +39,7 @@ const HomePage = () => {
           </div>
         </section>
 
-       <p className="animated-gradient-text text-white sm:text-4xl md:text-5xl lg:text-6xl italic drop-shadow-lg pb-30 p-10 text-center font-bold">
+       <p className=" text-white sm:text-4xl md:text-5xl lg:text-6xl italic drop-shadow-lg pb-30 p-10 text-center font-bold">
   Welcome to Wicked Fabrication — Built to Last. Made to Stand Out.
 </p>
 
