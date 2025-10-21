@@ -4,7 +4,7 @@ const FaqCard = ({ question, answer }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="flex-1 p-4 border flex flex-col bg-gray-800 text-white rounded shadow">
+    <div className="flex-1 p-4 border flex flex-col bg-gray-800 text-white rounded max-w-4xl mx-auto">
       {/* Question Row */}
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold">{question}</h1>
@@ -13,7 +13,7 @@ const FaqCard = ({ question, answer }) => {
         <button
           onClick={() => setOpen(!open)}
           aria-label={open ? 'Hide answer' : 'Show answer'}
-          className="text-white text-xl"
+          className="text-green-500 text-xl"
         >
           <i className={`bi bi-chevron-${open ? 'up' : 'down'} transition-transform duration-200`} />
         </button>

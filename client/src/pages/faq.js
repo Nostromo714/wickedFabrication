@@ -7,12 +7,12 @@ import React from 'react';
 const Faq = () => {
   return (
    <div className="p-4 bg-gray-800 text-white ">
-      <section className="mb-8">
+      <section className="fixed top-10 right-10 z-20">
         <Header />
       </section>
 
       
-<section className="mb-8 pt-20 px-10 space-y-6">
+<section className="mb-8 pt-40 px-10 space-y-6">
   <h1 className="text-4xl font-bold mb-4 text-center pb-10">
     Frequently Asked Questions
   </h1>
