@@ -12,7 +12,7 @@ import transparentLogo from "../Images/wickedLogoTransparent.png";
 const HomePage = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Header on top of background outside of scroll-limited section*/}
+      {/* Header fixed at top right */}
       <header className="fixed top-10 right-10 z-50 ">
         <Header />
       </header>

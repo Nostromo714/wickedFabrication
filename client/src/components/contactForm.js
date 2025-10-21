@@ -51,7 +51,7 @@ const ContactForm = () => {
   return (
     <section className="bg-gray-900 text-white p-6 border-t-4 ">
       <div className="max-w-4xl mx-auto text-center p-12">
-        <h1 className="text-3xl md:text-4xl font-bold mb-6 border-b-2 pb-4">
+        <h1 className="text-3xl md:text-4xl font-bold mb-6 border-b-2 border-green-500 pb-4">
           Let's Make Your Project Happen!
         </h1>
         <h2>Lets get in Touch</h2>

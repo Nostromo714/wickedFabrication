@@ -69,7 +69,7 @@ const Header = () => {
         </svg>
       </button>
 
-      {/* Desktop Menu with green border*/}
+      {/* Desktop Menu with styles*/}
       <nav className="hidden lg:block sticky top-0 bg-opacity-70 z-20 bg-gray-900 p-2 shadow-sm rounded-md" 
       aria-label="Main navigation"
       >
