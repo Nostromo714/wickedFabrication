@@ -116,6 +116,15 @@ const Header = () => {
           ))}
         </ul>
       </nav>
+       <a href="https://www.facebook.com/p/Wicked-Fabrication-Llc-100069697879112/" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 text-2xl">
+                  <i className="bi bi-facebook p-2"></i>
+                  
+                </a>
+       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 text-2xl">
+                  <i className="bi bi-instagram p-2"></i>
+                </a>
+      <a href="https://www.linkedin.com/in/tim-williams-26a7a7116/" target="_blank" rel="noopener noreferrer" className=" hover:tex-green-500 text-2xl">
+                  <i className="bi bi-linkedin p-2"></i> </a>
 
       {/* Mobile Hamburger Menu Content */}
       <HamburgerMenu />

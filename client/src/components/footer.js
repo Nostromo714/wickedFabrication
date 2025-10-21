@@ -24,7 +24,7 @@ const Footer = () => {
             <h5 className="text-lg font-semibold flex ">Follow Us</h5>
             <ul className="space-y-2 mt-2 ">
               <li>
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white ">
+                <a href="https://www.facebook.com/p/Wicked-Fabrication-Llc-100069697879112/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white ">
                   <i className="bi bi-facebook p-2"></i>
                   <span className="text-base">Follow Us on Facebook</span>
                 </a>
@@ -36,7 +36,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white ">
+                <a href="https://www.linkedin.com/in/tim-williams-26a7a7116/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white ">
                   <i className="bi bi-linkedin p-2"></i>
                   <span className="text-base">Follow Us on LinkedIn</span>
                 </a>
