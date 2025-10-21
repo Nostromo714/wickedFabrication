@@ -54,7 +54,7 @@ const ContactForm = () => {
         <h1 className="text-3xl md:text-4xl font-bold mb-6 border-b-2 border-green-500 pb-4">
           Let's Make Your Project Happen!
         </h1>
-        <h2>Lets get in Touch</h2>
+        <h2>Please Send us a message we will get back to you as soon as possible</h2>
 
         <form
           onSubmit={handleSubmit}
