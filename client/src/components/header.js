@@ -123,7 +123,7 @@ const Header = () => {
        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 text-2xl">
                   <i className="bi bi-instagram p-2"></i>
                 </a>
-      <a href="https://www.linkedin.com/in/tim-williams-26a7a7116/" target="_blank" rel="noopener noreferrer" className=" hover:tex-green-500 text-2xl">
+      <a href="https://www.linkedin.com/in/tim-williams-26a7a7116/" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 text-2xl">
                   <i className="bi bi-linkedin p-2"></i> </a>
 
       {/* Mobile Hamburger Menu Content */}
