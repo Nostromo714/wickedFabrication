@@ -8,7 +8,7 @@ import transparentLogo from "../Images/wickedLogoTransparent.png";
 
 const dropdownItems = {
   services: [
-    { to: "/services#signs", label: "Signs" },
+    { to: "/services#signs", label: "Industrial Signs" },
     { to: "/services#design", label: "Design and Art" },
     { to: "/services#metalFab", label: "Metal Fabrication" },
   ],

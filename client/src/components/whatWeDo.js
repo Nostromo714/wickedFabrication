@@ -37,7 +37,7 @@ const WhatWeDo = () => {
               className="w-full h-48 object-cover rounded-md mb-4 "
             />
             </a>
-            <h3 className="text-xl font-semibold mb-2">Industrial Signs and ART</h3>
+            <h3 className="text-xl font-semibold mb-2">Industrial Signs</h3>
             <p className="text-sm text-gray-300">
               Custom metalwork that transforms your ideas into reality. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
           voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
@@ -53,7 +53,7 @@ const WhatWeDo = () => {
               className="w-full h-48 object-cover rounded-md mb-4"
             />
             </a>
-            <h3 className="text-xl font-semibold mb-2">Design</h3>
+            <h3 className="text-xl font-semibold mb-2">Design and ART</h3>
             <p className="text-sm text-gray-300">
               Precision welding solutions with clean, strong finishes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
           voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.

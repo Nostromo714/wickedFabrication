@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <h5 className="text-lg font-semibold flex justify-center ">Services</h5>
             <ul className="space-y-2 mt-2 ">
-              <li><a href="/services#signs" className="text-gray-400 hover:text-white flex justify-center ">Signs</a></li>
+              <li><a href="/services#signs" className="text-gray-400 hover:text-white flex justify-center ">Industrial Signs</a></li>
               <li><a href="/services#design" className="text-gray-400 hover:text-white flex justify-center ">Design and Art</a></li>
               <li><a href="/services#metalFab" className="text-gray-400 hover:text-white flex justify-center">Metal Fabrication</a></li>
             </ul>
