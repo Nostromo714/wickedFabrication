@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../index.css';
+import '../components/portfolioGallery'
 
 const quotes = [
   {
@@ -41,8 +42,10 @@ const HeroQuotes = () => {
             i === index ? 'opacity-100' : 'opacity-0'
           }`}
         >
+          <a href="/portfolio">
           <p className="text-3xl md:text-4xl italic">“{quote.text}”</p>
           <p className="text-lg mt-2">— {quote.author}</p>
+          </a>
         </div>
       ))}
     </div>

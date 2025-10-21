@@ -43,9 +43,6 @@ const HomePage = () => {
   Welcome to Wicked Fabrication — Built to Last. Made to Stand Out.
 </p>
 
-<p>"Welcome to Wicked Fabrication — Built to Last. Made to Stand Out.
-        </p>
-
         {/* Hero Quotes with box styling and text styling */}
         <div className="border-b-4 border-l-4 border-t-4 border-r-4 rounded-lg w-9/12 max-w-4xl mx-auto bg-black bg-opacity-50 text-center p-2 pt-30 relative z-10">
           <HeroQuotes />
