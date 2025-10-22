@@ -22,3 +22,17 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/vendor/
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/sites/default/files/
+/web/sites/*/settings.php
+/web/sites/*/services.yml
+/web/sites/*/files/
+
+.DS_Store
+*.log
+.idea/
+.vscode/
