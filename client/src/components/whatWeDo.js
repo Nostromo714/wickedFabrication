@@ -65,7 +65,7 @@ const WhatWeDo = () => {
           <div className="bg-gray-900 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
              <a href="/services#metalFab">
             <img
-              src={modeling}
+              src={modelingImage}
               alt="Design"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
