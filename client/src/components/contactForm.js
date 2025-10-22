@@ -49,12 +49,12 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="bg-gray-800 text-white p-6 border-t-4">
-      <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-3xl md:text-4xl font-bold mb-6 border-b-2 pb-4">
+    <section className="bg-gray-900 text-white p-6 border-t-4 ">
+      <div className="max-w-4xl mx-auto text-center p-12">
+        <h1 className="text-3xl md:text-4xl font-bold mb-6 border-b-2 border-green-500 pb-4">
           Let's Make Your Project Happen!
         </h1>
-        <h2>Lets get in Touch</h2>
+        <h2>Please Send us a message we will get back to you as soon as possible</h2>
 
         <form
           onSubmit={handleSubmit}
@@ -68,7 +68,8 @@ const ContactForm = () => {
             value={formData.name}
             onChange={handleChange}
             required
-            className="p-3 w-full bg-red-800 text-white rounded-md"
+            className="w-full bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-green-500 text-white placeholder-gray-400 py-2"
+
             placeholder="Name:"
           />
 
@@ -80,7 +81,8 @@ const ContactForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="p-3 w-full bg-red-800 text-white rounded-md"
+           className="w-full bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-green-500 text-white placeholder-gray-400 py-2"
+
             placeholder="Email:"
           />
 
@@ -91,15 +93,16 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            className="p-3 w-full bg-red-800 text-white rounded-md"
+           className="w-full bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-green-500 text-white placeholder-gray-400 py-2"
+
             placeholder="Message:"
-            rows={5}
+            rows={2}
           ></textarea>
 
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full px-4 py-2 bg-green-800 text-white font-semibold rounded-md hover:bg-green-700 transition-colors"
+            className="w-full px-4 py-2 bg-gray-800 text-white font-semibold rounded-md hover:bg-green-700 transition-colors"
           >
             Send Message
           </button>

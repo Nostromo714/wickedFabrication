@@ -3,11 +3,12 @@ import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import HamburgerMenu from './hamburgerMenu';
 import { useMenu } from '../context/menuContext';
-import transparentLogo from '../Images/wickedLogoTransparent.png';
+import transparentLogo from "../Images/wickedLogoTransparent.png";
+
 
 const dropdownItems = {
   services: [
-    { to: "/services#signs", label: "Signs" },
+    { to: "/services#signs", label: "Industrial Signs" },
     { to: "/services#design", label: "Design and Art" },
     { to: "/services#metalFab", label: "Metal Fabrication" },
   ],
@@ -51,15 +52,11 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between p-4 text-white relative z-50">
-     
-      {/* Logo */}  
-      <section className="flex items-center">
-    <img src={transparentLogo} alt="Wicked Logo" className="w-48 h-48 object-cover" />
-      </section>
+      
       {/* Mobile Hamburger Button */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="md:hidden"
+        className="lg:hidden"
         aria-label="Toggle menu"
         aria-expanded={menuOpen}
       >
@@ -72,11 +69,11 @@ const Header = () => {
         </svg>
       </button>
 
-      {/* Desktop Menu */}
-      <nav className="hidden md:block sticky top-0 bg-opacity-60 z-20 bg-gray-900 right-10 p-2 shadow-sm rounded-md" 
+      {/* Desktop Menu with styles*/}
+      <nav className="hidden lg:block sticky top-0 bg-opacity-70 z-20 bg-gray-900 p-2 shadow-sm rounded-md" 
       aria-label="Main navigation"
       >
-        <ul className="flex space-x-4 p-2 rounded-md">
+        <ul className="flex space-x-4 p-2 rounded-md border-green-500 border-2">
           <li><Link to="/" className="hover:underline">HOME</Link></li>
           <li><Link to="/about" className="hover:underline">ABOUT</Link></li>
 
@@ -97,7 +94,7 @@ const Header = () => {
                 {openDropdown === menuKey && (
                   <ul
                     id={`${menuKey}-menu`}
-                    className={`absolute left-0 mt-2 bg-white text-black shadow-lg rounded-md z-50 ${
+                    className={`absolute mt-2 bg-white text-black shadow-lg rounded-md z-50 ${
                     menuKey === "info" ? "right-0" : "left-0"}`}
                     role="menu"
                   >
@@ -119,6 +116,15 @@ const Header = () => {
           ))}
         </ul>
       </nav>
+       <a href="https://www.facebook.com/p/Wicked-Fabrication-Llc-100069697879112/" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 text-2xl">
+                  <i className="bi bi-facebook p-2"></i>
+                  
+                </a>
+       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 text-2xl">
+                  <i className="bi bi-instagram p-2"></i>
+                </a>
+      <a href="https://www.linkedin.com/in/tim-williams-26a7a7116/" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 text-2xl">
+                  <i className="bi bi-linkedin p-2"></i> </a>
 
       {/* Mobile Hamburger Menu Content */}
       <HamburgerMenu />

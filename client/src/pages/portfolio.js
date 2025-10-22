@@ -22,7 +22,7 @@ const Portfolio = () => {
       />
 
       {/* Header over background */}
-      <div className="absolute top-0 left-0 w-full">
+      <div className="fixed top-10 right-10 z-20">
       <Header />
       </div>
       </div>

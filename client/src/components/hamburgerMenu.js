@@ -17,7 +17,7 @@ const HamburgerMenu = () => {
       <nav
         className={`fixed top-0 right-0 h-full w-1/3 max-w-sm bg-white text-black z-40 transform transition-transform duration-300 ease-in-out ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
-        } md:hidden`}
+        } lg:hidden`}
       >
         <ul className="flex flex-col space-y-4 p-6">
           <li>
@@ -41,19 +41,19 @@ const HamburgerMenu = () => {
                 <li>
                   <Link to="/services#signs" onClick={() => setMenuOpen(false)}
                   className="block px-2 py-2 hover:bg-gray-200 rounded">
-                    Signs
+                    INDUSTRIAL SIGNS
                   </Link>
                 </li>
                 <li>
                   <Link to="/services#design" onClick={() => setMenuOpen(false)}
                   className="block px-2 py-2 hover:bg-gray-200 rounded">
-                    Design and Art
+                    DESIGN AND ART
                   </Link>
                 </li>
                  <li>
                   <Link to="/services#metalFab" onClick={() => setMenuOpen(false)}
                   className="block px-2 py-2 hover:bg-gray-200 rounded">
-                    Metal Fabrications
+                    METAL FABRICATION
                   </Link>
                 </li>
               </ul>
@@ -69,12 +69,12 @@ const HamburgerMenu = () => {
               <ul className="ml-4 mt-2 space-y-2">
                 <li>
                   <Link to="/portfolio/signs" onClick={() => setMenuOpen(false)}>
-                    SIGNS
+                    INDUSTRIAL SIGNS
                   </Link>
                 </li>
                 <li>
                   <Link to="/portfolio/art" onClick={() => setMenuOpen(false)}>
-                    ART
+                    FABRICATION ART
                   </Link>
                 </li>
               </ul>
@@ -90,7 +90,7 @@ const HamburgerMenu = () => {
               <ul className="ml-4 mt-2 space-y-2">
                 <li>
                   <Link to="/info/form" onClick={() => setMenuOpen(false)}>
-                    INFO
+                    CONTACT US
                   </Link>
                 </li>
                 <li>
