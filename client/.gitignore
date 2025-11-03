@@ -32,7 +32,22 @@ yarn-error.log*
 /web/sites/*/services.yml
 /web/sites/*/files/
 
+# Ignore all Drupal generated files
+/web/sites/default/files/
+/web/sites/*/files/
+core/
+/vendor/
+
+
+# DRUPAL GENERATED FILES
+my_drupal_site/web/sites/default/files/
+my_drupal_site/web/sites/*/files/
+my_drupal_site/vendor/
+my_drupal_site/core/
+
+
 .DS_Store
 *.log
 .idea/
 .vscode/
+my_drupal_site/web/sites/default/files/.ht.sqlite
