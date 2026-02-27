@@ -42,10 +42,13 @@ my_drupal_site/web/sites/*/files/
 my_drupal_site/web/sites/*/private/
 my_drupal_site/web/sites/*/files/php/
 my_drupal_site/web/sites/*/files/styles/
+my_drupal_site/web/sites/*/settings.php
+my_drupal_site/web/sites/*/services.yml
 
 # If Drupal is sometimes at root
 /web/sites/*/files/
-
+# Windows/IIS config
+my_drupal_site/web/web.config
 # General Drupal
 vendor/
 core/
