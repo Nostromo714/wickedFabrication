@@ -36,3 +36,23 @@ yarn-error.log*
 *.log
 .idea/
 .vscode/
+
+# Drupal generated files (nested install)
+my_drupal_site/web/sites/*/files/
+my_drupal_site/web/sites/*/private/
+my_drupal_site/web/sites/*/files/php/
+my_drupal_site/web/sites/*/files/styles/
+
+# If Drupal is sometimes at root
+/web/sites/*/files/
+
+# General Drupal
+vendor/
+core/
+
+client/my_drupal_site/web/sites/*/settings.php
+client/my_drupal_site/web/sites/*/services.yml
+client/my_drupal_site/web/web.config
+/client/my_drupal_site/web/sites/default/settings.php
+/client/my_drupal_site/web/web.config
+/client/my_drupal_site/sites/default/files/
