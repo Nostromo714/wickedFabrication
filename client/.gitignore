@@ -1,4 +1,4 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+brew services list# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
@@ -59,3 +59,11 @@ client/my_drupal_site/web/web.config
 /client/my_drupal_site/web/sites/default/settings.php
 /client/my_drupal_site/web/web.config
 /client/my_drupal_site/sites/default/files/
+
+# Drupal backups
+*.tar.gz
+*_backup*
+my_drupal_site_backup/
+
+# PHP test files
+info.php
