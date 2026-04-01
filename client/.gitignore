@@ -1,5 +1,8 @@
 brew services list# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Ignore entire Drupal install
+my_drupal_site/
+
 # dependencies
 /node_modules
 /.pnp

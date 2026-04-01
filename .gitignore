@@ -1,0 +1,10 @@
+# Ignore Drupal 
+my_drupal_site/
+
+# Node / React
+node_modules/
+build/
+
+# Env + system
+.env
+.DS_Store
