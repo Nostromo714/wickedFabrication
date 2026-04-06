@@ -32,7 +32,7 @@ const PortfolioGallery = () => {
   useEffect(() => {
     const fetchPortfolio = async () => {
       try {
-        const res = await fetch(getApiUrl('/jsonapi/node/images?include=field_media,field_media.field_media_image,field_portfolio_tags'));
+        const res = await fetch(getApiUrl('/jsonapi/node/images?include=field_media,field_media.field_media_image,field_portfolio_tags,field_category'));
         if (!res.ok) throw new Error('Failed to fetch');
         const data = await res.json();
         const included = data.included || [];
@@ -50,20 +50,24 @@ const PortfolioGallery = () => {
           return tag ? tag.attributes.name.toLowerCase() : null;
         };
 
+        const getCategoryName = (categoryId) => {
+        const categoryTerm = included.find(
+          i => i.type === 'taxonomy_term--portfolio_categories' && i.id === categoryId
+        );
+        return categoryTerm ? categoryTerm.attributes.name.toUpperCase() : 'ART';
+        };
+
         const items = data.data.map(item => {
           const mediaId = item.relationships?.field_media?.data?.id;
           const tagIds = item.relationships?.field_portfolio_tags?.data || [];
-
-          // TEMP: detect category from title (update later to use real taxonomy)
-          const title = item.attributes?.title || 'Untitled';
-          const category = title.toLowerCase().includes('sign') ? 'SIGNS' : 'ART';
-
+          const categoryId = item.relationships?.field_category?.data?.id;
+          
           return {
             id: item.id,
-            title,
+            title: item.attributes.title || 'Untitled',
             image: getImageUrl(mediaId),
             created: item.attributes.created,
-            category,
+            category: getCategoryName(categoryId),
             tags: tagIds.map(tag => getTagName(tag.id)).filter(Boolean),
           };
         });
