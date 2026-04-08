@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ const ContactForm = () => {
   });
 
   const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,34 +20,28 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    // send email using emailjs
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      setIsSubmitting(true); 
+      setStatus('Sending your message...');
 
-    const apiUrl = process.env.REACT_APP_API_URL;
-    const apiUrlWithNoTrailingSlash = apiUrl.endsWith("/")
-      ? apiUrl.slice(0, -1)
-      : apiUrl;
+     try {
+      const result = await emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        formData,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      );
 
-    setStatus('Sending...');
-
-    try {
-      const response = await fetch(`${apiUrlWithNoTrailingSlash}/contact`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const result = await response.json();
-      if (result.success) {
-        setStatus(result.message);
-        setFormData({ name: '', email: '', message: '' });
-      } else {
-        setStatus('Something went wrong, this is from the front end.');
-      }
+      console.log(result.text);
+      setStatus("✅ Message sent! We'll be in touch soon.");
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      setStatus('Error: Could not send message from the front end.');
+      console.error(error);
+      setStatus("❌ Oops! Something went wrong, please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -96,15 +93,16 @@ const ContactForm = () => {
            className="w-full bg-transparent border-b-2 border-gray-500 focus:outline-none focus:border-green-500 text-white placeholder-gray-400 py-2"
 
             placeholder="Message:"
-            rows={2}
+            rows={3}
           ></textarea>
 
           {/* Submit Button */}
           <button
             type="submit"
+            disabled={isSubmitting}
             className="w-full px-4 py-2 bg-gray-800 text-white font-semibold rounded-md hover:bg-green-700 transition-colors"
           >
-            Send Message
+            {isSubmitting ? "Sending..." : "Send Message"}
           </button>
 
           {/* Status Message */}
