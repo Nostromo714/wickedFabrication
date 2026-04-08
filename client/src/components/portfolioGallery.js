@@ -145,24 +145,16 @@ const PortfolioGallery = () => {
   return (
     <div className="p-4">
       <h1 className="text-4xl font-bold mb-8">Portfolio Gallery</h1>
-
-      {CATEGORY_ORDER.map(category => {
-      const itemsInCategory = portfolioItems.filter(item => item.category === category);
-      return itemsInCategory.length > 0 ? renderSection(category) : null;
-    })}
-
-      {isModalOpen && currentItems.length > 0 && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80 p-4 overflow-auto" onClick={closeModal}>
-          <div className="relative max-w-3xl w-full" onClick={(e) => e.stopPropagation()}>
-            <button className="absolute top-2 right-2 sm:top-4 sm:right-4 text-white text-3xl bg-black bg-opacity-50 hover:bg-opacity-80 rounded-full px-3 py-1 z-10" onClick={closeModal}>
-              &times;
-            </button>
-            <img src={currentItems[currentIndex].image} alt={currentItems[currentIndex].title} className="w-full max-h-[85vh] object-contain rounded-lg" />
-            <button className="absolute left-0 top-1/2 transform -translate-y-1/2 text-white text-4xl px-4" onClick={(e) => { e.stopPropagation(); goToPrev(); }}>&#8592;</button>
-            <button className="absolute right-0 top-1/2 transform -translate-y-1/2 text-white text-4xl px-4" onClick={(e) => { e.stopPropagation(); goToNext(); }}>&#8594;</button>
-          </div>
-        </div>
-      )}
+      {CATEGORY_ORDER.map(category => renderSection(category))}
+      
+      <ImageModal
+        isOpen={isModalOpen}
+        items={currentItems}
+        currentIndex={currentIndex}
+        onClose={closeModal}
+        onPrev={goToPrev}
+        onNext={goToNext}
+      />
     </div>
   );
 };

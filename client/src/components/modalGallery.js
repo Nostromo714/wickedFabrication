@@ -2,7 +2,7 @@
 import React from 'react';
 
 const ImageModal = ({ isOpen, items, currentIndex, onClose, onPrev, onNext }) => {
-  if (!isOpen || !items.length) return null;
+  if (!isOpen || !items || !items.length) return null;
 
   const currentItem = items[currentIndex];
 
@@ -42,8 +42,22 @@ const ImageModal = ({ isOpen, items, currentIndex, onClose, onPrev, onNext }) =>
         <div className="text-white text-center mt-4 text-xl font-semibold">
           {currentItem.title}
         </div>
+        
+         {/* Tags */}
+        {currentItem.tags && currentItem.tags.length > 0 && (
+          <div className="text-center mt-2 flex flex-wrap justify-center gap-2">
+            {currentItem.tags.map((tag) => (
+              <span
+                key={tag}
+                className="bg-gray-200 text-gray-800 px-2 py-1 rounded-full text-sm"
+              >
+                {tag}
+              </span>
+            ))}
       </div>
-    </div>
+        )}
+      </div>
+      </div>
   );
 };
 
