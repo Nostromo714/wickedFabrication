@@ -39,9 +39,15 @@ const Info = () => {
         <div className="flex-1 p-4 border-4 flex flex-col items-center">
           <h1 className="text-2xl font-bold pt-5">Address</h1>
           <i className="bi bi-geo-alt-fill text-green-500 text-3xl mb-4 pt-5"></i>
-          <p className="mt-2 p-2">Lake Havsu, Arizona</p>
-        </div>
-        
+          <a
+    href="https://www.google.com/maps?q=Lake+Havasu+Arizona"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-2 p-2 hover:text-green-400"
+  >
+    Lake Havasu, Arizona
+  </a>
+</div>
       </section>
        {/* Footer Component */}
             <footer className="mt-auto">
