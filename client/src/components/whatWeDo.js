@@ -2,6 +2,7 @@
 import transparentLogo from "../Images/wickedLogoTransparent.png";
 import modelingImage from "../Images/modeling.jpg";
 import weldingImage from "../Images/welder1.jpg";
+import sparks from "../Images/sparks.jpg";
 
 const WhatWeDo = () => {
   return (
@@ -16,13 +17,13 @@ const WhatWeDo = () => {
         </p>
         
         <p className="pb-20">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-          voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
-          Nesciunt, ullam. Adipisci modi veritatis beatae culpa ipsam
-          repudiandae commodi assumenda soluta. Lorem ipsum dolor sit, amet
-          consectetur adipisicing elit. Ratione, rem quae eaque fugiat culpa,
-          facere dolor labore odio cumque ex eius dicta cum, tenetur mollitia in
-          ullam unde. Tempore, voluptas.
+          Explore our custom fabrication services and see how we can bring your vision to life.
+
+          At Wicked Fabrication, we specialize in turning ideas into bold, high-quality reality. From concept to completion, every project is built with precision, creativity, and attention to detail.
+
+          We design and create custom signage, metal fabrication pieces, and one-of-a-kind work tailored to each client’s needs. Whether it’s business signage for restaurants, hotels, and public services, or personal memorials and custom gifts, every piece is crafted to be meaningful and built to last.
+
+          No matter the size of the project, we take pride in delivering work that stands out, tells a story, and reflects the vision behind it.
         </p>
      </div>
     </section>
@@ -40,8 +41,7 @@ const WhatWeDo = () => {
             </a>
             <h3 className="text-xl font-semibold mb-2">Industrial Signs</h3>
             <p className="text-sm text-gray-300">
-              Custom metalwork that transforms your ideas into reality. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-          voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
+               Durable, high-impact signage built for businesses, public spaces, and commercial environments. Each sign is designed to be both functional and visually striking, built to withstand the elements while representing your brand with confidence.
             </p>
           </div>
 
@@ -56,8 +56,7 @@ const WhatWeDo = () => {
             </a>
             <h3 className="text-xl font-semibold mb-2">Design and ART</h3>
             <p className="text-sm text-gray-300">
-              Precision welding solutions with clean, strong finishes. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-          voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
+              Creative design work that blends craftsmanship with artistic vision. From custom concepts to detailed visual pieces, we turn ideas into meaningful designs that stand out and tell a story.
             </p>
           </div>
 
@@ -65,15 +64,14 @@ const WhatWeDo = () => {
           <div className="bg-gray-900 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
              <a href="/services#metalFab">
             <img
-              src={modelingImage}
+              src={sparks}
               alt="Design"
               className="w-full h-48 object-cover rounded-md mb-4"
             />
             </a>
             <h3 className="text-xl font-semibold mb-2">Metal Fabrication </h3>
             <p className="text-sm text-gray-300">
-              Bespoke designs tailored to meet your vision and goals. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum
-          voluptatum dolores assumenda libero nisi tempora facere, quod ipsam.
+              Custom metal fabrication built around your exact needs. Whether structural, decorative, or one-of-a-kind pieces, every project is crafted with precision, strength, and attention to detail from start to finish.
             </p>
           </div>
       </div>

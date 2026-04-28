@@ -29,9 +29,29 @@ const Faq = () => {
 
   <FaqCard
     question="How can I get a quote?"
-    answer="You can get a quote by contacting us via phone or email with details about your project. We will respond promptly with an estimate."
-  />
-</section>
+    answer={
+      <div> 
+     <p> "You can get a quote by contacting us via phone or email with details about your project. We will respond promptly with an estimate."</p>
+      <div className="mt-4">
+        <i className="bi bi-telephone-fill text-green-500 text-1xl mb-4 pt-5"></i>
+        <a
+          href="tel:1234567890"
+          className="mr-4 p-2 text-green-400 hover:text-green-500"
+        >
+          (123) 456-7890
+        </a>
+         <i className="bi bi-envelope-fill text-green-500 text-1xl mb-4 pt-5 "></i>
+        <a
+          href="mailto:Twicked147@gmail.com"
+          className="mr-4 p-2 text-green-400 hover:text-green-500"
+        >
+          Twicked147@gmail.com
+        </a>
+      </div>
+    </div>
+  }
+ />
+</section>  
 
        {/* Footer Component */}
         <footer className="mt-auto">

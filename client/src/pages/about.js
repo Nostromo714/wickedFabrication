@@ -33,11 +33,15 @@ const AboutPage = () => {
     <div className="flex flex-col min-h-screen pt-10 bg-black">
       <section className="relative z-10 flex flex-col items-center justify-center h-full text-white">
         <h1 className="text-4xl font-bold mb-20 ">About Us</h1>
-        <p className="text-lg mb-4">
-          This is the about page. Here you can include information about your website or application.
-        </p>
-        <p className="text-lg mb-4 p-12">
-          Add more content as needed to describe your mission, team, or any other relevant details. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore reprehenderit similique libero quaerat eveniet reiciendis! Nam architecto voluptatem fugiat molestiae, provident, sunt in mollitia sed, placeat repellendus odio voluptate. lorem1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius labore reprehenderit similique libero quaerat eveniet reiciendis! Nam architecto voluptatem fugiat molestiae, provident, sunt in mollitia sed, placeat repellendus odio voluptate. lorem1
+        <h2 className="text-lg mb-4">
+          About Wicked Fabrication and Timmy, the heart behind it all
+        </h2>
+        <p className="text-lg mb-4 p-20">
+          Wicked Fabrication was started in 2010 as a small side project, built from a passion for creating and a love of hands-on craftsmanship. Over the years, that passion grew into something much bigger—driven by the creativity and dedication of Tim, the heart behind it all.
+
+          Tim and his fiance have called Lake Havasu, Arizona home for the past 10 years, where they enjoy the sunshine, lake life, and time spent out on their Harley. But when it’s time to get to work, the shop is where the real magic happens.
+
+          With a strong eye for design and a passion for creating visually striking and meaningful pieces, Tim has crafted custom signage for police departments, hotels, and restaurants, as well as personal memorials and heartfelt gifts. Every piece that comes out of Wicked Fabrication reflects not only skill and precision, but also a genuine love for the craft.
         </p>
       </section>
 

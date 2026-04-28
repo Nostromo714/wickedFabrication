@@ -28,7 +28,7 @@ const Info = () => {
           <h1 className="text-2xl font-bold pt-5">Email Us</h1>
           <i className="bi bi-envelope-fill text-green-500 text-3xl mb-4 pt-5"></i>
            <a
-    href="mailto:Twicked@gmail.com"
+    href="mailto:Twicked147@gmail.com"
     className="mt-2 p-4 text-white hover:text-green-400 break-all select-text"
   >
     Twicked@gmail.com
