@@ -62,7 +62,7 @@ const HamburgerMenu = () => {
 
           {/* PORTFOLIO DROPDOWN */}
           <li>
-            <button onClick={() => toggleDropdown('portfolio')} className="hover:underline w-full text-left">
+            <button onClick={() => toggleDropdown('portfolio')} className="hover:underline w-full text-left ">
               PORTFOLIO ▾
             </button>
             {openDropdown === 'portfolio' && (
