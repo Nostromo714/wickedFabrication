@@ -7,16 +7,12 @@ import sparks from "../Images/sparks.jpg";
 const WhatWeDo = () => {
   return (
     <div>
-    <section className="bg-gray-800 text-white p-6 border-t-4 pt-20">
+    <section className="bg-gray-800 text-white p-6 border-t-4 pt-20 md:pt-24 lg:pt-28 ">
      <div className="max-w-4xl mx-auto text-top">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4 ">What We Do</h2>
-        <p className="text-lg md:text-xl mb-6 italic">Signs and Fabrication</p>
-        <p className="text-md md:text-lg">
-          Explore our custom fabrication services and see how we can bring your
-          vision to life.
-        </p>
+        <h2 className="text-2xl md:text-3xl sm:text-4xl font-bold mb-4 ">What We Do</h2>
+        <p className="text-lg md:text-xl sm:text-xl mb-6 italic">Signs and Fabrication</p>
         
-        <p className="pb-20">
+        <p className="pb-20 italic text-md md:text-xl sm:text-xl">
           Explore our custom fabrication services and see how we can bring your vision to life.
 
           At Wicked Fabrication, we specialize in turning ideas into bold, high-quality reality. From concept to completion, every project is built with precision, creativity, and attention to detail.
@@ -25,18 +21,19 @@ const WhatWeDo = () => {
 
           No matter the size of the project, we take pride in delivering work that stands out, tells a story, and reflects the vision behind it.
         </p>
-     </div>
-    </section>
-     {/* Three Column Grid Section */}
-    <section className="bg-gray-800 text-white p-6 p-12">
-      <div className="grid md:grid-cols-3 gap-8 pb-20">
-          {/* Signs */}
-          <div className="bg-gray-900 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+      </div>
+      </section>
+
+      {/* Three Column Grid Section */}
+      <section className="bg-gray-800 text-white p-6 p-12 ">
+       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10 pb-20">
+          {/* Industrial Signs */}
+          <div className=" bg-gray-900 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
             <a href="/services#signs">
             <img
               src={modelingImage}
               alt="Fabrication"
-              className="w-full h-48 object-cover rounded-md mb-4 "
+              className="w-full aspect-[4/2] object-cover rounded-md mb-4 "
             />
             </a>
             <h3 className="text-xl font-semibold mb-2">Industrial Signs</h3>
@@ -45,13 +42,13 @@ const WhatWeDo = () => {
             </p>
           </div>
 
-          {/* Design */}
-          <div className="bg-gray-900 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 cursor-pointer">
+          {/* Design and Art*/}
+          <div className="bg-gray-900 rounded-lg shadow-lg p-4 transform transition-transform duration-300 hover:scale-105 cursor-pointer ">
             <a href="/services#design">
             <img
               src={weldingImage}
               alt="Welding"
-              className="w-full h-48 object-cover rounded-md mb-4"
+              className="w-full aspect-[4/2] object-cover rounded-md mb-4"
             />
             </a>
             <h3 className="text-xl font-semibold mb-2">Design and ART</h3>
@@ -66,7 +63,7 @@ const WhatWeDo = () => {
             <img
               src={sparks}
               alt="Design"
-              className="w-full h-48 object-cover rounded-md mb-4"
+              className="w-full aspect-[4/2] object-cover rounded-md mb-4"
             />
             </a>
             <h3 className="text-xl font-semibold mb-2">Metal Fabrication </h3>
@@ -74,7 +71,7 @@ const WhatWeDo = () => {
               Custom metal fabrication built around your exact needs. Whether structural, decorative, or one-of-a-kind pieces, every project is crafted with precision, strength, and attention to detail from start to finish.
             </p>
           </div>
-      </div>
+        </div>
        </section>
        </div>
   );
