@@ -51,18 +51,16 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="w-full flex items-center justify-between py-3 text-white relative z-50">
+    <header className="flex items-center justify-between p-4 text-white relative z-50">
       
       {/* Mobile Hamburger Button */}
-      <div className="flex-shrink-0">
-        <button
+      <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="lg:hidden pr-4 "
+        className="lg:hidden"
         aria-label="Toggle menu"
         aria-expanded={menuOpen}
       >
-        <svg className="w-10 h-10 md:w-8 md:h-8"
-        fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-10 h-10 sm:w-8 sm:h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -70,8 +68,7 @@ const Header = () => {
           />
         </svg>
       </button>
-      </div>
-     
+
       {/* Desktop Menu with styles*/}
       <nav className="hidden lg:block sticky top-0 bg-opacity-70 z-20 bg-gray-900 p-2 shadow-sm rounded-md" 
       aria-label="Main navigation"
@@ -119,22 +116,21 @@ const Header = () => {
           ))}
         </ul>
       </nav>
-      <section className="hidden lg:flex items-center">
-       <a href="https://www.facebook.com/p/Wicked-Fabrication-Llc-100069697879112/" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 lg:text-2xl sm:text-6xl ">
+        {/* Social Media Icons */}
+      <section className="hidden lg:block">
+       <a href="https://www.facebook.com/p/Wicked-Fabrication-Llc-100069697879112/" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 text-2xl">
                   <i className="bi bi-facebook p-2"></i>
                   
                 </a>
-       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 lg:text-2xl sm:text-6xl">
+       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 text-2xl">
                   <i className="bi bi-instagram p-2"></i>
                 </a>
-       <a href="https://www.linkedin.com/in/tim-williams-26a7a7116/" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 lg:text-2xl sm:text-6xl">
+      <a href="https://www.linkedin.com/in/tim-williams-26a7a7116/" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 text-2xl">
                   <i className="bi bi-linkedin p-2"></i> </a>
-
       </section>
-     
-      {/* Mobile Slide-in Menu */}
+
+      {/* Mobile Hamburger Menu Content */}
       <HamburgerMenu />
-      
     </header>
   );
 };

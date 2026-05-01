@@ -26,21 +26,21 @@ const HomePage = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
         {/* Transparent logo */}
-        <section className="p-2 relative z-10 flex flex-col md:flex-row text-center p-8 sm:flex-row">
+        <section className="p-2 relative z-10 flex flex-col lg:flex-row text-center sm:flex-col items-center ">
           <img src={transparentLogo} alt="Wicked Logo" className="w-56 sm:w-64 md:w-64" />
           {/* Logo text with drop shadow */}
           <div className="flex flex-col text-left pl-4">
-            <h1 className="text-white text-2xl sm:text-3xl font-bold drop-shadow-lg pt-10">
+            <h1 className="text-white text-2xl sm:text-3xl font-bold drop-shadow-lg pt-4">
               Wicked Fabrication 
             </h1>
-            <p className="text-white text-sm sm:text-base italic drop-shadow-lg">
+            <p className="text-white text-base sm:text-lg md:text-xl italic drop-shadow-lg">
               Custom Metal Fabrication & Signage
             </p>
           </div>
         </section>
           {/* Hero Quotes Section */}
         <section className="p-12 relative z-10 flex flex-col items-center justify-center space-y-8 ">
-        <p className="text-white sm:text-3xl md:text-5xl lg:text-6xl italic drop-shadow-lg text-center font-bold pb-12">
+        <p className="text-white text-xl sm:text-3xl md:text-5xl lg:text-6xl italic drop-shadow-lg text-center font-bold pb-12">
         Welcome to Wicked Fabrication — Built to Last. Made to Stand Out.
         </p>
         {/* Hero Quotes with box styling and text styling */}
