@@ -60,7 +60,7 @@ const Header = () => {
         aria-label="Toggle menu"
         aria-expanded={menuOpen}
       >
-        <svg className="w-10 h-10 sm:w-8 sm:h-8" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+        <svg className="w-10 h-10 sm:w-20 sm:h-20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
