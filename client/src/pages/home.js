@@ -14,7 +14,7 @@ const HomePage = () => {
     <div className="flex flex-col">
       {/* Background section with header and overlay */}
       <section
-        className="relative bg-cover bg-center min-h-screen flex flex-col justify-center px-4"
+        className="relative bg-cover bg-center  flex flex-col justify-center px-4"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         {/* Header fixed at top right */}
