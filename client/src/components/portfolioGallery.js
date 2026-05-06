@@ -143,7 +143,7 @@ const PortfolioGallery = () => {
   };
 
   return (
-    <div className="p-4">
+    <div className="p-4 min-h-screen">
       <h1 className="text-4xl font-bold mb-8">Portfolio Gallery</h1>
       {CATEGORY_ORDER.map(category => renderSection(category))}
       

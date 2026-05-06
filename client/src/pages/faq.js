@@ -6,7 +6,7 @@ import React from 'react';
 
 const Faq = () => {
   return (
-   <div className="p-4 bg-gray-800 text-white ">
+   <div className="p-4 bg-gray-800 text-white min-h-screen flex-col">
       <section className="fixed top-10 right-10 z-20">
         <Header />
       </section>
