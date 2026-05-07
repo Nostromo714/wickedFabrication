@@ -12,26 +12,26 @@ const Faq = () => {
       </section>
 
       
-<section className="mb-8 pt-40 px-10 space-y-6">
-  <h1 className="text-4xl font-bold mb-4 text-center pb-10">
-    Frequently Asked Questions
-  </h1>
+  <section className="mb-8 pt-40 px-10 space-y-6">
+      <h1 className="text-4xl font-bold mb-4 text-center pb-10">
+        Frequently Asked Questions
+      </h1>
 
-  <FaqCard
-    question="How do we handle shipping?"
-    answer="We offer a range of services including custom signs, metal fabrication, and design work. Contact us for more details!"
-  />
+      <FaqCard
+        question="How do we handle shipping?"
+        answer="We offer a range of services including custom signs, metal fabrication, and design work. Contact us for more details!"
+      />
 
-  <FaqCard
-    question="What is the return policy?"
-    answer="Our business hours are Monday to Friday, 9 AM to 5 PM. We are closed on weekends and public holidays."
-  />
+      <FaqCard
+        question="What is the return policy?"
+        answer="Our business hours are Monday to Friday, 9 AM to 5 PM. We are closed on weekends and public holidays."
+      />
 
-  <FaqCard
-    question="How can I get a quote?"
-    answer={
-      <div> 
-     <p> "You can get a quote by contacting us via phone or email with details about your project. We will respond promptly with an estimate."</p>
+      <FaqCard
+        question="How can I get a quote?"
+        answer={
+          <div> 
+        <p> "You can get a quote by contacting us via phone or email with details about your project. We will respond promptly with an estimate."</p>
       <div className="mt-4">
         <i className="bi bi-telephone-fill text-green-500 text-1xl mb-4 pt-5"></i>
         <a

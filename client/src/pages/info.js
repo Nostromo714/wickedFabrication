@@ -16,11 +16,11 @@ const Info = () => {
           <h1 className="text-2xl font-bold pt-5">Call Us</h1>
           <i className="bi bi-telephone-fill text-green-500 text-3xl mb-4 pt-5"></i>
            <a
-    href="tel:1234567890"
-    className="mt-2 p-4 text-white hover:text-green-400 break-all select-text"
-  >
-    (123) 456-7890
-  </a>
+          href="tel:1234567890"
+          className="mt-2 p-4 text-white hover:text-green-400 break-all select-text"
+           >
+          (123) 456-7890
+           </a>
         </div>
 
         {/* Email Us */}
@@ -28,11 +28,11 @@ const Info = () => {
           <h1 className="text-2xl font-bold pt-5">Email Us</h1>
           <i className="bi bi-envelope-fill text-green-500 text-3xl mb-4 pt-5"></i>
            <a
-    href="mailto:Twicked147@gmail.com"
-    className="mt-2 p-4 text-white hover:text-green-400 break-all select-text"
-  >
-    Twicked@gmail.com
-  </a>
+            href="mailto:Twicked147@gmail.com"
+            className="mt-2 p-4 text-white hover:text-green-400 break-all select-text"
+            >
+            Twicked@gmail.com
+          </a>
         </div>
 
         {/* Address */}
@@ -40,13 +40,13 @@ const Info = () => {
           <h1 className="text-2xl font-bold pt-5">Address</h1>
           <i className="bi bi-geo-alt-fill text-green-500 text-3xl mb-4 pt-5"></i>
           <a
-    href="https://www.google.com/maps?q=Lake+Havasu+Arizona"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-2 p-2 hover:text-green-400"
-  >
-    Lake Havasu, Arizona
-  </a>
+        href="https://www.google.com/maps?q=Lake+Havasu+Arizona"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-2 p-2 hover:text-green-400"
+          >
+            Lake Havasu, Arizona
+          </a>
 </div>
       </section>
        {/* Footer Component */}
