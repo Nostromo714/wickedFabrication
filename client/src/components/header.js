@@ -127,6 +127,11 @@ const Header = () => {
                 </a>
       <a href="https://www.linkedin.com/in/tim-williams-26a7a7116/" target="_blank" rel="noopener noreferrer" className=" hover:text-green-500 text-2xl">
                   <i className="bi bi-linkedin p-2"></i> </a>
+
+       <a href="https://www.tiktok.com/@wickedfabricationllc?lang=en" target="_blank" rel="noopener noreferrer" className="hover:text-green-500 text-2xl">
+                  <i className="bi bi-tiktok p-2"></i>
+                  
+                </a>
       </section>
 
       {/* Mobile Hamburger Menu Content */}

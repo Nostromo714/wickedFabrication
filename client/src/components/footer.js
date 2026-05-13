@@ -41,6 +41,13 @@ const Footer = () => {
                   <span className="text-base">Follow Us on LinkedIn</span>
                 </a>
               </li>
+              <li>
+                <a href="https://www.tiktok.com/@wickedfabricationllc?lang=en" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white ">
+                  <i className="bi bi-tiktok p-2"></i>
+                  <span className="text-base">Follow Us on Tiktok</span>
+                </a>
+              </li>
+              
             </ul>
           </div>
         </div>
