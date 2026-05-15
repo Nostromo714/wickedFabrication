@@ -19,7 +19,7 @@ const Info = () => {
           href="tel:1234567890"
           className="mt-2 p-4 text-white hover:text-green-400 break-all select-text"
            >
-          (123) 456-7890
+          (928) 706-3413
            </a>
         </div>
 
@@ -31,7 +31,7 @@ const Info = () => {
             href="mailto:Twicked147@gmail.com"
             className="mt-2 p-4 text-white hover:text-green-400 break-all select-text"
             >
-            Twicked@gmail.com
+            Twicked147@gmail.com
           </a>
         </div>
 
