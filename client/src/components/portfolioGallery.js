@@ -9,7 +9,10 @@ const PortfolioGallery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentItems, setCurrentItems] = useState([]);
 
-  const DRUPAL_API = process.env.REACT_APP_DRUPAL_API || '';
+  const DRUPAL_API = process.env.REACT_APP_DRUPAL_API;
+  if (!DRUPAL_API) {
+    console.error("Missing REACT_APP_DRUPAL_API in .env");
+  }
   const location = useLocation();
 
   const getCategoryFromPath = () => {
@@ -24,16 +27,12 @@ const PortfolioGallery = () => {
     ? [selectedCategory, ...DEFAULT_ORDER.filter(cat => cat !== selectedCategory)]
     : DEFAULT_ORDER;
 
-  const getApiUrl = (path) => {
-    if (process.env.NODE_ENV === 'development') return path;
-    return `${DRUPAL_API}${path}`;
-  };
-
   useEffect(() => {
+      console.log("DRUPAL API:", DRUPAL_API);
+      
     const fetchPortfolio = async () => {
       try {
-        const res = await fetch(getApiUrl('/jsonapi/node/images?include=field_media,field_media.field_media_image,field_portfolio_tags,field_category'));
-        if (!res.ok) throw new Error('Failed to fetch');
+        const res = await fetch(`${DRUPAL_API}/jsonapi/node/images`);
         const data = await res.json();
         const included = data.included || [];
 
