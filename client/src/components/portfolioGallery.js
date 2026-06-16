@@ -32,7 +32,7 @@ const PortfolioGallery = () => {
       
     const fetchPortfolio = async () => {
       try {
-        const res = await fetch(`${DRUPAL_API}/jsonapi/node/images`);
+        const res = await fetch(`${DRUPAL_API}/jsonapi/node/images?include=field_media,field_media.field_media_image`);
         const data = await res.json();
         const included = data.included || [];
 
