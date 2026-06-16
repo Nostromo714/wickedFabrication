@@ -64,6 +64,7 @@ const PortfolioGallery = () => {
           const tagIds = item.relationships?.field_portfolio_tags?.data || [];
           const categoryId = item.relationships?.field_category?.data?.id;
 
+          console.log("RAW NODE:", item);
           console.log(
           "Node:",
           item.attributes.title,
