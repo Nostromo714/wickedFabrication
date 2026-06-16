@@ -30,11 +30,14 @@ const PortfolioGallery = () => {
   useEffect(() => {
       console.log("DRUPAL API:", DRUPAL_API);
       
-    const fetchPortfolio = async () => {
-      try {
-        const res = await fetch(`${DRUPAL_API}/jsonapi/node/images?include=field_media,field_media.field_media_image`);
-        const data = await res.json();
-        const included = data.included || [];
+   const fetchPortfolio = async () => {
+  try {
+    const res = await fetch(
+      `${DRUPAL_API}/jsonapi/node/images?include=field_media,field_media.field_media_image,field_category,field_portfolio_tags`
+    );
+
+    const data = await res.json();
+    const included = data.included || [];
 
         const getImageUrl = (mediaId) => {
           const media = included.find(i => i.type === 'media--image' && i.id === mediaId);
@@ -53,13 +56,20 @@ const PortfolioGallery = () => {
         const categoryTerm = included.find(
           i => i.type === 'taxonomy_term--portfolio_categories' && i.id === categoryId
         );
-        return categoryTerm ? categoryTerm.attributes.name.toUpperCase() : 'ART';
+        return categoryTerm ? categoryTerm.attributes.name.toUpperCase() : 'UNKNOWN';
         };
 
         const items = data.data.map(item => {
           const mediaId = item.relationships?.field_media?.data?.id;
           const tagIds = item.relationships?.field_portfolio_tags?.data || [];
           const categoryId = item.relationships?.field_category?.data?.id;
+
+          console.log(
+          "Node:",
+          item.attributes.title,
+          "Category ID:",
+          categoryId
+        );
           
           return {
             id: item.id,
