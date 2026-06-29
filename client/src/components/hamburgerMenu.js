@@ -53,7 +53,7 @@ const HamburgerMenu = () => {
                  <li>
                   <Link to="/services#metalFab" onClick={() => setMenuOpen(false)}
                   className="block px-2 py-2 hover:bg-gray-200 rounded">
-                    METAL FABRICATION
+                    FABRICATION
                   </Link>
                 </li>
               </ul>

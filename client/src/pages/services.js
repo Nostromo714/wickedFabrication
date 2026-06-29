@@ -31,8 +31,9 @@ const Services = () => {
       </section>
 
       <section id="signs" className=' mb-8 pt-20'>
-      <h1 className="text-4xl font-bold mb-4 flex justify-center pt-20">Industrial Signs</h1>
-      <p className="mb-4 text-center p-12">Our industrial signs are built for durability, visibility, and impact. We design and fabricate custom signage for businesses, public spaces, and commercial environments that need to stand up to harsh conditions while still looking sharp and professional. Every piece is crafted with precision materials and attention to detail to ensure long-lasting performance and strong visual presence. </p>
+      <h1 className="text-4xl font-bold mb-4 flex justify-center pt-20">Industrial Custom Signs</h1>
+      <p className="mb-4 text-center p-12">Custom signs built for durability, visibility, and impact. We design, fabricate, and install signage for businesses, public spaces, and commercial environments using high-quality materials and finishes.
+      Our work is built to withstand both indoor and outdoor conditions while maintaining a professional appearance. Each project is carefully planned to match the client’s brand identity and environment. We focus on delivering signage that is both functional and visually strong. </p>
        <div className="bg-gray-900 rounded-lg shadow-lg p-4 w-1/2 mx-auto mb-12">
                   <img
                     src={modeling}
@@ -44,7 +45,8 @@ const Services = () => {
                
       <section id="design" className=" mb-8">
         <h2 className="text-3xl font-semibold mb-2 pt-12 flex justify-center ">Design and ART</h2>
-        <p className="mb-4 text-center p-12">Our design and art work focuses on turning ideas into visually meaningful creations. From concept development to finished artwork, we help shape custom designs that reflect personality, purpose, and creativity. Whether it’s branding concepts, custom visuals, or artistic metal layouts, each piece is thoughtfully developed to stand out and make an impression. </p>
+        <p className="mb-4 text-center p-12">We provide custom signage fabrication using acrylic, foam dimensional lettering, channel letters, digital print, and product lines such as Corobond and Cabernet. Every piece is built with precision, craftsmanship, and attention to detail.
+        Our design process focuses on turning ideas into clear, impactful visuals that communicate effectively. We work closely with clients to refine concepts and bring their vision to life. Every design is created with both creativity and purpose in mind.</p>
          <div className="bg-gray-900 rounded-lg shadow-lg p-4 w-1/2 mx-auto mb-12">
                   <img
                     src={weldingImage}
@@ -54,8 +56,9 @@ const Services = () => {
                 </div>
         </section>
       <section id="metalFab" className=' mb-8'>
-        <h2 className="text-3xl font-semibold mb-2 flex justify-center p-12">Metal Fabrication</h2>
-        <p className="mb-4 text-center pb-20">Our welding and fabrication services cover everything from structural work to detailed custom builds. We combine skill, precision, and high-quality materials to create strong, reliable, and visually clean finished products. Whether it’s repairs, one-off builds, or custom fabrication projects, every weld and cut is done with care and craftsmanship. </p>
+        <h2 className="text-3xl font-semibold mb-2 flex justify-center p-12">Fabrication</h2>
+        <p className="mb-4 text-center pb-20">We provide custom signage fabrication using acrylic, foam dimensional lettering, channel letters, digital print, and product lines such as Corobond and Cabernet. Every piece is built with precision, craftsmanship, and attention to detail.
+        We take pride in producing high-quality builds that are clean, strong, and long-lasting. Each fabrication project goes through careful construction and finishing to ensure consistency. Our goal is to deliver work that looks professional and performs reliably over time.</p>
          <div className="bg-gray-900 rounded-lg shadow-lg p-4 w-1/2 mx-auto mb-12">
                   <img
                     src={sparks}

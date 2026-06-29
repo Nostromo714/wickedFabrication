@@ -10,7 +10,7 @@ const dropdownItems = {
   services: [
     { to: "/services#signs", label: "Industrial Signs" },
     { to: "/services#design", label: "Design and Art" },
-    { to: "/services#metalFab", label: "Metal Fabrication" },
+    { to: "/services#metalFab", label: "Fabrication" },
   ],
   portfolio: [
     { to: "/portfolio/signs", label: "SIGNS" },

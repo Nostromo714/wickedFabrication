@@ -34,7 +34,7 @@ const AboutPage = () => {
       <section className="relative z-10 flex flex-col items-center justify-center h-full text-white">
         <h1 className="text-4xl font-bold mb-20 ">About Us</h1>
         <h2 className="text-lg mb-4">
-          About Wicked Fabrication and Timmy, the heart behind it all
+          About Wicked Signs & Fabrication and Timmy, the heart behind it all
         </h2>
         <p className="text-lg mb-4 p-20">
           Wicked Fabrication was started in 2010 as a small side project, built from a passion for creating and a love of hands-on craftsmanship. Over the years, that passion grew into something much bigger—driven by the creativity and dedication of Tim, the heart behind it all.

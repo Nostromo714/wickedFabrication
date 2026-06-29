@@ -5,15 +5,15 @@ import '../components/portfolioGallery'
 const quotes = [
   {
     text: "We don’t just weld metal. We bring ideas to life — one spark at a time.",
-    author: "Wicked Fabrication"
+    author: "Wicked Signs & Fabrication"
   },
   {
     text: "Signs don’t just point the way — they make a statement",
-    author: "Wicked Fabrication"
+    author: "Wicked Signs & Fabrication"
   },
   {
     text: "Your vision. Our tools. Wicked results ",
-    author: "Wicked Fabrication"
+    author: "Wicked Signs & Fabrication"
   },
   {
     text: "Wicked cool. Wicked custom. Wicked fabrication.",

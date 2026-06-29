@@ -13,13 +13,10 @@ const WhatWeDo = () => {
         <p className="text-lg md:text-xl sm:text-xl mb-6 italic">Signs and Fabrication</p>
         
         <p className="pb-20 italic text-md md:text-xl sm:text-xl">
-          Explore our custom fabrication services and see how we can bring your vision to life.
+          Explore our custom fabrication and signage services and see how we can bring your vision to life. At Wicked Signs and Fabrication, we specialize in turning ideas into high-quality, custom work built with precision and creativity.
 
-          At Wicked Fabrication, we specialize in turning ideas into bold, high-quality reality. From concept to completion, every project is built with precision, creativity, and attention to detail.
+          From business signage for restaurants, hotels, and public spaces to memorials and custom gifts, we design, fabricate, and install each project to meet our clients' unique needs. No matter the size of the job, we take pride in creating work that stands out, tells a story, and is built to last.
 
-          We design and create custom signage, metal fabrication pieces, and one-of-a-kind work tailored to each client’s needs. Whether it’s business signage for restaurants, hotels, and public services, or personal memorials and custom gifts, every piece is crafted to be meaningful and built to last.
-
-          No matter the size of the project, we take pride in delivering work that stands out, tells a story, and reflects the vision behind it.
         </p>
       </div>
       </section>
@@ -66,9 +63,10 @@ const WhatWeDo = () => {
               className="w-full aspect-[4/2] object-cover rounded-md mb-4"
             />
             </a>
-            <h3 className="text-xl font-semibold mb-2">Metal Fabrication </h3>
+            <h3 className="text-xl font-semibold mb-2">Fabrication </h3>
             <p className="text-sm text-gray-300">
-              Custom metal fabrication built around your exact needs. Whether structural, decorative, or one-of-a-kind pieces, every project is crafted with precision, strength, and attention to detail from start to finish.
+              Custom fabrication and signage solutions built to your exact needs. We work with acrylic, foam dimensional lettering, Corobond, channel letters, and digital print materials to create durable, eye-catching results.
+
             </p>
           </div>
         </div>
