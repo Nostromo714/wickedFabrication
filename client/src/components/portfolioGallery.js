@@ -17,12 +17,14 @@ const PortfolioGallery = () => {
 
   const getCategoryFromPath = () => {
     if (location.pathname.includes('/portfolio/signs')) return 'SIGNS';
+    if (location.pathname.includes('/portfolio/interior')) return 'INTERIOR';
+    if (location.pathname.includes('/portfolio/exterior')) return 'EXTERIOR';
     if (location.pathname.includes('/portfolio/art')) return 'ART';
     return null;
   };
 
   const selectedCategory = getCategoryFromPath();
-  const DEFAULT_ORDER = ['SIGNS', 'ART'];
+  const DEFAULT_ORDER = ['SIGNS', 'INTERIOR', 'EXTERIOR', 'ART'];
   const CATEGORY_ORDER = selectedCategory
     ? [selectedCategory, ...DEFAULT_ORDER.filter(cat => cat !== selectedCategory)]
     : DEFAULT_ORDER;
